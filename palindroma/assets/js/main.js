@@ -7,7 +7,7 @@ console.log(splitParola);
 
 //funzione per capire se la parola inserita è palindroma
 
-/*
+/*           PRIMA SOLUZIONE FUNZIONANTE MA DA MODIFICARE
 function palindroma (esaminaParola) {
     for (var i = 0 ; i < (Math.floor(esaminaParola.length / 2)); i++) {
         if (esaminaParola[i] !== esaminaParola[esaminaParola.length - 1 - i]) {
@@ -24,7 +24,7 @@ console.log(risultato);
 */
 
 
-/*
+/*              SECONDA SOLUZIONE NON FUNZIONANTE
 function palindroma (esaminaParola , ParolaInvertita) {
     for (var i = 0; i < esaminaParola.length; i++) {
         
@@ -43,6 +43,7 @@ console.log(risultato);
 */
 
 
+// TERZA SOLUZIONE NON FUNZIONANTE
 function palindroma (esaminaParola) {
     for (var i = 0; i < esaminaParola.length; i++) {
         

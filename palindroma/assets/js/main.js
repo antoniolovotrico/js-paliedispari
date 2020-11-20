@@ -1,9 +1,6 @@
 //Chiedere all’utente di inserire una parola
 
-var parolaUtente = prompt("inserisci una parola");
 
-var splitParola = parolaUtente.split("");
-console.log(splitParola);
 
 //funzione per capire se la parola inserita è palindroma
 
@@ -41,21 +38,28 @@ function palindroma (esaminaParola , ParolaInvertita) {
 var risultato = palindroma (parolaUtente , splitParola);
 console.log(risultato);
 */
+var parolaUtente = prompt("inserisci una parola");
 
 
-// TERZA SOLUZIONE NON FUNZIONANTE
+
+            // TERZA SOLUZIONE  FUNZIONANTE
 function palindroma (esaminaParola) {
-    for (var i = 0; i < esaminaParola.length; i++) {
-        
-    } for (var j = esaminaParola.length; j > 0; j--) {
-
+    var splitParola = esaminaParola.split("");
+    //console.log(splitParola);
+    var revParola = "";
+    for (var i = splitParola.length - 1; i >= 0; i--) {
+      // console.log(splitParola[i]);
+       revParola += splitParola[i];     
     }
-    if (esaminaParola[i] == esaminaParola[j]) {
+    //console.log(esaminaParola);
+    //console.log(revParola);
+    if (esaminaParola == revParola) {
         return "è palindroma";
     } else {
-        return "non è palindroma"
+        return "non è palindroma";
     }
-}
+}  
+    
 
-var risultato = palindroma (splitParola);
+var risultato = palindroma (parolaUtente);
 console.log(risultato);

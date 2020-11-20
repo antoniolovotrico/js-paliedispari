@@ -23,13 +23,15 @@ var risultato = palindroma (parolaUtente);
 console.log(risultato);
 */
 
-function palindroma (esaminaParola , splitParola) {
+
+/*
+function palindroma (esaminaParola , ParolaInvertita) {
     for (var i = 0; i < esaminaParola.length; i++) {
         
-    } for (var i = splitParola.length; i > 0; i--) {
+    } for (var i = ParolaInvertita.length; i > 0; i--) {
 
     }
-    if (esaminaParola[i] == splitParola[i]) {
+    if (esaminaParola[i] == ParolaInvertita[i]) {
         return "è palindroma";
     } else {
         return "non è palindroma"
@@ -37,4 +39,22 @@ function palindroma (esaminaParola , splitParola) {
 }
 
 var risultato = palindroma (parolaUtente , splitParola);
+console.log(risultato);
+*/
+
+
+function palindroma (esaminaParola) {
+    for (var i = 0; i < esaminaParola.length; i++) {
+        
+    } for (var j = esaminaParola.length; j > 0; j--) {
+
+    }
+    if (esaminaParola[i] == esaminaParola[j]) {
+        return "è palindroma";
+    } else {
+        return "non è palindroma"
+    }
+}
+
+var risultato = palindroma (splitParola);
 console.log(risultato);

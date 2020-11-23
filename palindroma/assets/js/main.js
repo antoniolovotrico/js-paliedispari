@@ -63,3 +63,29 @@ function palindroma (esaminaParola) {
 
 var risultato = palindroma (parolaUtente);
 console.log(risultato);
+
+      
+
+
+
+/*  // QUARTA SOLUZIONE  FUNZIONANTE
+          function palindroma (esaminaParola) {
+            //var splitParola = esaminaParola.split("");
+            //console.log(splitParola);
+            var revParola = "";
+            for (var i = esaminaParola.length - 1; i >= 0; i--) {
+              // console.log(splitParola[i]);
+               revParola += esaminaParola[i];     
+            }
+            //console.log(esaminaParola);
+            //console.log(revParola);
+            if (esaminaParola == revParola) {
+                return "è palindroma";
+            } else {
+                return "non è palindroma";
+            }
+        }  
+            
+        
+        var risultato = palindroma (parolaUtente);
+        console.log(risultato); */

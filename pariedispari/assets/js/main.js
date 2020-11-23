@@ -21,9 +21,9 @@ console.log(sum);
 
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 function evenOdd (somma , bid) {
-  if (sum % 2 == 0 && userBid == "pari") {
+  if (somma % 2 == 0 && bid == "pari") {
     return "Hai Vinto, la somma dei numeri è pari";
-  } else if (sum % 2 !== 0 && userBid == "dispari") {
+  } else if (somma % 2 !== 0 && bid == "dispari") {
     return "Hai Vinto, la somma dei numeri è dispari";
   } else {
     return "hai perso la somma dei numeri restituisce un risultato differente dalla tua puntata";
